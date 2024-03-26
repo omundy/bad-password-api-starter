@@ -1,3 +1,5 @@
+// main.js - client-side code to connect to the bad password API
+
 // REFERENCES
 let password = document.querySelector("#password");
 let info = document.querySelector("#info");
@@ -145,37 +147,3 @@ let badSynonyms = `bad
 function randomFromArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
-
-// // This version sends data to server in the body of a POST request
-// async function updatePasswordPost() {
-
-//     // store form data in an object to send to server
-//     let formData = {
-//         common: common.checked || false,
-//         endearments: endearments.checked || false,
-//         pets: pets.checked || false,
-//         patterns: patterns.checked || false,
-//         colors: colors.checked || false,
-//         dates: dates.checked || false,
-//         cities: cities.checked || false,
-//         // lowercase: lowercase.checked || false,
-//     }
-//     console.log(formData)
-
-//     // create options object to send data, options
-//     let options = {
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify(formData),
-//     }
-
-//     // request data
-//     await fetch('https://bad-password-api.glitch.me/api/custom', options)
-//         .then(response => response.json())
-//         .then(json => {
-//             console.log("fetch() response", json);
-//             password.value = json.password;
-//         });
-// }

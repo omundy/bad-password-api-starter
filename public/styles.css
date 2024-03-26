@@ -1,3 +1,5 @@
+/* styles.css - client-side code for the bad password API */
+
 :root {
     --background: rgb(46, 23, 61);
     --background-dk: rgb(33, 16, 44);
@@ -11,7 +13,7 @@
 
 html,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: var(--background);
     color: var(--text);
     margin: 0;
@@ -35,7 +37,7 @@ path {
 }
 
 h1 {
-    font-family: 'Honk', system-ui;
+    font-family: "Honk", system-ui;
     font-size: 3rem;
     margin-top: 6rem;
 }
@@ -64,12 +66,12 @@ h2 {
 
 input,
 button {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     font-size: 1.2rem;
     border: none;
-    padding: .5rem .7rem;
-    margin: 1rem .4rem;
-    border-radius: .4rem;
+    padding: 0.5rem 0.7rem;
+    margin: 1rem 0.4rem;
+    border-radius: 0.4rem;
 }
 
 input {
@@ -77,8 +79,8 @@ input {
 }
 
 button {
-    margin-left: .5rem;
-    border-radius: .3rem;
+    margin-left: 0.5rem;
+    border-radius: 0.3rem;
     background-color: var(--button);
     box-shadow: 0 6px 0 0 var(--shadow);
     transform: translateY(-4px);
@@ -95,12 +97,16 @@ button:active {
     transform: translateY(0px);
 }
 
+/* order for the checkboxes */
+.grid-container {
+    text-align: left;
+    /* Grid styles */
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
 
-
-
-/* .custom-checkbox 
-https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
-*/
+/* .custom-checkbox https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 .custom-checkbox {
     display: inline-block;
     position: relative;
@@ -151,11 +157,6 @@ https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
     display: none;
 }
 
-/* Show the checkmark when checked */
-.custom-checkbox input:checked~.checkmark:after {
-    display: block;
-}
-
 /* Style the checkmark/indicator */
 .custom-checkbox .checkmark:after {
     left: 9px;
@@ -169,6 +170,10 @@ https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
     transform: rotate(45deg);
 }
 
+/* Show the checkmark when checked */
+.custom-checkbox input:checked~.checkmark:after {
+    display: block;
+}
 
 .desc {
     color: var(--background-lt);
@@ -180,21 +185,21 @@ https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
     min-height: 1.5rem;
 }
 
-/********** CODE **********/
+/********** DISPLAYING CODE **********/
 
 .well {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
-    padding: .7rem;
+    padding: 0.7rem;
     background-color: var(--background-dk);
     color: var(--input);
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05);
     text-align: left;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
 }
 
 code {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     border: none;
-    margin: .4rem;
+    margin: 0.4rem;
 }
