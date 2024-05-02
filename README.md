@@ -13,4 +13,4 @@ This project uses Node.js (backend) to returns data to the browser (frontend).
 
 ## Notes
 
-- See README.md in the original project
+- See [README.md](https://glitch.com/edit/#!/bad-password-api) in the original project

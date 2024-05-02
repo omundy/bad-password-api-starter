@@ -3,21 +3,9 @@
 // import data for the API
 import { data, functions } from "./data.js";
 
+// this function defines the endpoints (a.k.a. "routes") for the API
 const routes = async (server, options) => {
-  
-  // //1
-  // server.get("/api", async function (request, reply) {
-  //   reply.send({ message: 123 });
-  // });
-  // //2
-  // server.get("/api/common", async function (request, reply) {
-  //   reply.send({ message: functions.randomFromArray(data.common) });
-  // });
-  // //3
-  // server.get("/api/custom", async function (request, reply) {
-  //   console.log(request.query.params);
-  //   reply.send({ messageeturnPassword(request.query.params) });
-  // });
+  // 👉 add code inside this function (from Chapter 9) ...
 };
 export default routes;
 
