@@ -10,6 +10,7 @@ document.addEventListener("submit", (e) => {
   e.preventDefault();
   updatePassword();
 });
+
 // add a change event listener to each option
 document.querySelectorAll("input[type=radio]").forEach((ele) => {
   ele.addEventListener("change", updatePassword);
