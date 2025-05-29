@@ -2,7 +2,6 @@
 
 // REFERENCES
 let password = document.querySelector("#password");
-let info = document.querySelector("#info");
 let button = document.querySelector("#submit");
 
 // EVENTS
@@ -12,15 +11,12 @@ document.addEventListener("submit", (e) => {
   updatePassword();
 });
 
-async function updatePassword() {
-  // base url for API always returns a common bad password
-  let url = "./api";
+// add a change event listener to each option
+document.querySelectorAll("input[type=radio]").forEach((ele) => {
+  ele.addEventListener("change", updatePassword);
+});
 
-  // request data
-  await fetch(url)
-    .then((response) => response.json())
-    .then((json) => {
-      console.log("fetch() response", json);
-      password.value = json.message;
-    });
+// called from load and user events
+async function updatePassword() {
+  // 👉 add code inside this function (from Chapter 9) ...
 }
