@@ -19,4 +19,5 @@ document.querySelectorAll("input[type=radio]").forEach((ele) => {
 // called from load and user events
 async function updatePassword() {
   // 👉 add code inside this function (from Chapter 9) ...
+
 }
