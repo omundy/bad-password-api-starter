@@ -1,0 +1,20 @@
+{
+    "name": "bad-password-api-starter",
+    "version": "1.0.0",
+    "description": "A simple Node Express Vercel example",
+    "main": "api/index.js",
+    "author": "Owen Mundy",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "node api/index.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.1",
+        "express": "^4.18.2",
+        "node-fetch": "^3.3.2",
+        "nodemon": "^3.1.10",
+        "vercel": "^42.2.0"
+    }
+}
