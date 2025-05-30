@@ -1,30 +1,47 @@
 # Bad Password API (Starter)
 
-A simpler version of the [bad-password-api.vercel.app](https://bad-password-api.vercel.app/) that appears in Chapter 9 "Data Tracking" in <em>Critical Web Design</em> by xtine burrough and Owen Mundy (MIT Press, 2025).
+<!-- Note: These instructions are the same across the two projects -->
+
+
+A password generator that only gives you terrible, regrettable, unacceptable, dreadful, awful, unusable passwords. Use the generator frontend [bad-password-api.vercel.app](https://bad-password-api.vercel.app/) or connect to the API from your own app to:
+
+- Get a commonly-used bad password
+- Add parameters to generate a shiny new terrible password
+
 
 ## How does it work?
 
 This project uses Node.js (backend) to returns data to the browser (frontend). 
 
 - `public/index.html`: The frontend for the API, uses client side JS to make requests to the server.
-- `index.js`: [Node.js](https://nodejs.org/en/about/) runs Javascript in the backend using the Express framework to start the server and import the `routes.js` file
-- `routes.js` contains the endpoints that return new passwords
-- `package.json`: The NPM packages for your project's dependencies
+- `api/index.js`: [Node.js](https://nodejs.org/en/about/) runs Javascript in the backend using the Express framework to start the server and import the `routes.js` file
+- `api/routes.js` contains the endpoints that return new passwords
+- `package.json`: The NPM packages for project dependencies
+
+
 
 ## Notes
 
-- See [README.md](https://github.com/omundy/bad-password-api) in the original project
+- The finish version https://github.com/omundy/bad-password-api
+- The starter project https://github.com/omundy/bad-password-api-starter appears in Chapter 9 "Data Tracking" in <em>Critical Web Design</em> by xtine burrough and Owen Mundy (MIT Press, 2025).
+
 
 
 
 ## Instructions
 
-### Connect to API
+1. Clone the repo from Github
+1. Run `npm install`
+1. Start the app using `nodemon`
 
-See Chapter 9 of Critical Web Design
+### Connect to the API
+
+See Chapter 9 of Critical Web Design and use the starter version 
+https://github.com/omundy/bad-password-api-starter
 
 
 ### Full-stack Instructions
 
 1. Create a directory called `public` and move `index.html`, `main.js`, and `styles.css` into the directory
-1. More coming soon...
+1. Publish on Vercel https://github.com/criticalwebdesign/book/wiki/Chapter-09#vercel-instructions
+
