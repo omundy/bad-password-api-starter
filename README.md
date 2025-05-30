@@ -23,6 +23,8 @@ This project uses Node.js (backend) to returns data to the browser (frontend).
 
 See Chapter 9 of Critical Web Design
 
+
 ### Full-stack Instructions
 
-1. Create a directory called `public` and move `index.html`, `main.js`, and `styles.css` into it
+1. Create a directory called `public` and move `index.html`, `main.js`, and `styles.css` into the directory
+1. More coming soon...
